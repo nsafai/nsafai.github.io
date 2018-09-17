@@ -18,8 +18,6 @@ h1 {
 .container-grid {
     display:flex;;
     justify-content: center;
-    /* grid-auto-flow:column;
-    grid-template-columns: [left] 5px 5px [middle] 5px 5px [right] */
 }
 
 .contact-link {
@@ -35,18 +33,3 @@ h1 {
     font-weight: bold;
     font-size:1.1em;
 }
-/*
-.link-1 {
-    display:grid;
-    grid-column: left;
-}
-
-.link-2 {
-    display:grid;
-    grid-column: middle;
-}
-
-.link-3 {
-    display:grid;
-    grid-column: right;
-} */
