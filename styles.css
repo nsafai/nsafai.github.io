@@ -1,35 +1,99 @@
+/*****************
+     FULLPAGE
+*****************/
+
 body {
+    margin: 0;
     font-family: 'Raleway','Roboto','Lato', Helvetica, sans-serif;
-    font-size: 16px;
-    text-align: center;
+    /* font-size: 16px; */
     background-color:#f7f7f7;
 }
 
+a {
+    text-decoration: none;
+}
+a:hover {
+    -webkit-transform: scale(1.2);
+}
+
+
+/*****************
+       HERO
+*****************/
+
+html, body, .hero-container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container {
+    display:grid;
+    grid-template-rows: 1fr;
+    /* grid-template-columns: 10fr 1fr; */
+}
+
+.hero-title-container {
+    margin-top:16em;
+    margin-left:10em;
+}
+
 h1 {
-    text-align: center;
+    margin:0;
+    font-size: 8em;
+    /* border: 1px solid black; */
+    /* margin-bottom:0; */
 }
 
-.round-image {
-    margin-top:10%;
-    border-radius: 50%;
-    max-height:200px;
+h2 {
+    font-size:3em;
+    /* border: 1px solid black; */
+    margin-top: 1em;
 }
 
-.container-grid {
-    display:flex;;
+/*****************
+    NAVIGATION
+*****************/
+
+.nav-container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing:border-box;
+    display:flex;
+    background-color:#252A2E;
+    position: absolute;
+    /* display:grid;
+    grid-auto-flow: column;
+    justify-content: right; */
+}
+
+.left-nav {
+    flex-grow: 1;
+}
+
+.right-nav {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.website-logo {
+    border: 2px solid white;
+    margin: 0;
+    display:flex;
     justify-content: center;
+    align-items:center;
+    color:#fff;
+    font-size:2em;
+    height: 42px;
+    width: 42px;
+    margin: 10px;
+    /* float:left; */
 }
 
 .contact-link {
     padding: 10px;
 }
 
-.contact-link a {
-    text-decoration: none;
-    color: #0074D9;
-}
-
-.contact-link:hover {
-    font-weight: bold;
-    font-size:1.1em;
+.social-logo {
+    height:42px;
+    /* max-width:42px; */
 }
