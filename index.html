@@ -7,15 +7,24 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.sticky.js"></script>
+    <script>
+        $(window).load(function() {
+            $("#header").sticky({
+                topSpacing: 0
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="hero-container">
-        <div class="hero-title-container">
+        <div class="title-container">
             <h1>Hello,<br>I'm Nicolai</h1>
             <h2>I like building things &<br>creative problem solving</h2>
         </div>
-        <header class="nav-container">
+        <header class="nav-container" id="header">
             <div class="left-nav">
                 <a href=""><p class="website-logo">N</p></a>
             </div>
@@ -32,12 +41,51 @@
             </div>
         </header>
     </div>
-    <hr>
-    <div "timeline-container">
-        <h3>Learning Web Development</h3>
-        <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
-        <img src="http://placekitten.com/300/200" alt=""><img src="http://placekitten.com/300/200" alt="">
+    <!-- <div class="timeline-background">
+        <div class="timeline-container">
+            <h2 id="timeline-title">My Story</h2>
+            <article id="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/400/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
+            <article class="timeline-slide">
+                <h3>Learning Web Development</h3>
+                <h4>I'm currently studying Applied Computer Science at Make School, with an emphasis in Web Development</h4>
+                <img src="http://placekitten.com/300/200" alt="" class="first-image"><img src="http://placekitten.com/300/200" alt="">
+            </article>
         </div>
+    </div> -->
 
 
 </body>
