@@ -11,12 +11,17 @@
     --dark-orange: #e17055;
 }
 
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Quicksand-Regular.ttf');
+}
+
 /*****************
      FULLPAGE
 *****************/
 body {
     margin: 0;
-    font-family: 'Raleway', 'Roboto', 'Lato', Helvetica, sans-serif;
+    font-family: 'Poppins', 'Lato', Helvetica, sans-serif;
     font-size: 22px;
     background-color: var(--white-grey);
 }
