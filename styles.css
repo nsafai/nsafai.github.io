@@ -17,16 +17,12 @@
 body {
     margin: 0;
     font-family: 'Raleway', 'Roboto', 'Lato', Helvetica, sans-serif;
-    /* font-size: 16px; */
+    font-size: 22px;
     background-color: var(--white-grey);
 }
 
 a {
     text-decoration: none;
-}
-
-a:hover {
-    -webkit-transform: scale(1.2);
 }
 
 /*****************
@@ -42,7 +38,7 @@ html, body, .hero-container {
     grid-template-rows: 1fr;
     ;
     /* background-image: url("img/subtle-background.jpg"); */
-    background: url("img/subtle-background.jpg") no-repeat center center ;
+    background: url("img/subtle-background.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,36 +47,37 @@ html, body, .hero-container {
 }
 
 .title-container {
-    margin-top: 16em;
-    margin-left: 10em;
-    margin-right:1em;
-    margin-bottom:1em;
+    margin-top: 11.5em;
+    margin-left: 7em;
+    margin-right: 0.7em;
+    margin-bottom: 0.7em;
 }
 
 h1 {
     margin: 0;
-    font-size: 8em;
+    font-size: 6em;
     color: var(--dark-grey);
     /* border: 1px solid black; */
     /* margin-bottom:0; */
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     /* border: 1px solid black; */
-    margin-top: 0.5em;
+    margin-top: 0.3em;
     color: var(--medium-grey);
 }
 
-/* #hero-subtitle {
-    color:var(--blue-grey);
-} */
+#subtitle-span {
+    color: var(--blue-grey);
+}
+
 /*****************
       NAVBAR
 *****************/
 .nav-container {
     width: 100%;
-    padding: 0 2.5em;
+    padding: 0 1.8em;
     box-sizing: border-box;
     display: flex;
     background-color: var(--medium-grey);
@@ -104,7 +101,7 @@ h2 {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.45em;
     height: 42px;
     width: 42px;
     margin: 10px;
@@ -118,6 +115,12 @@ h2 {
     height: 30px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 /*****************
      TIMELINE
 *****************/
@@ -126,53 +129,52 @@ h2 {
 }
 
 .timeline-container {
-    margin: 0 1em 1em 1em;
+    margin: 0 0.75em 0.75em 0.75em;
     color: #fff;
 }
 
 #timeline-title {
     margin-top: 0;
-    padding-top: 3.5em;
-    padding-bottom: 1.75em;
+    padding-top: 2.5em;
+    padding-bottom: 1.25em;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     color: var(--pale-grey);
 }
 
 h3 {
-    margin-top: 0.15em;
-    margin-bottom: 0.3em;
-    font-size: 1.5em;
+    margin-top: 0.10em;
+    margin-bottom: 0.2em;
+    font-size: 1em;
     color: #FF9F55;
 }
 
 h4 {
-    margin-top: 0.15em;
-    margin-bottom: 0.6em;
+    margin-top: 0.10em;
+    margin-bottom: 0.4em;
     ;
-    font-size: 2em;
-    color: var(--blue-grey) font-size: 2em;
+    font-size: 1.5em;
+    color: var(--blue-grey) font-size: 1.5em;
 }
 
 .timeline-container img:not(.first-image) {
-    margin-left: 1em;
+    margin-left: 0.7em;
 }
 
 /***** MOBILE *****/
-
 @media screen and (max-width: 700px) {
-
     .title-container {
         /* margin-top: 24em; */
-        margin-left: 2em;;
-        margin-right:0.5em;
+        margin-left: 1.5em;
+        ;
+        margin-right: 0.3em;
     }
 
     h1 {
-        font-size:5em;
+        font-size: 3.5em;
     }
 
     h2 {
-        font-size:2em;
+        font-size: 1.5em;
     }
 }
