@@ -3,12 +3,12 @@
 *****************/
 :root {
     --white-grey: #f5f6fa;
-    --pale-grey: #dfe6e9;
-    --light-grey: #b2bec3;
-    --medium-grey: #2d3436;
+    --pale-grey: #c8d6e5;
+    --light-grey: #8395a7;
+    --medium-grey: #576574;
     --dark-grey: #252A2E;
-    --blue-grey: #3c6382;
-    --dark-orange: #e17055;
+    --highlight: #ff9f43;
+    --footer: #222f3e;
 }
 
 @font-face {
@@ -17,7 +17,7 @@
 }
 
 /*****************
-     FULLPAGE
+    ENTIRE PAGE
 *****************/
 body {
     margin: 0;
@@ -41,29 +41,29 @@ html, body, .hero-container {
 .hero-container {
     display: grid;
     grid-template-rows: 1fr;
-    ;
-    /* background-image: url("img/subtle-background.jpg"); */
     background: url("img/subtle-background.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* grid-template-columns: 10fr 1fr; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title-container {
-    margin-top: 11.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     margin-left: 7em;
     margin-right: 0.7em;
-    margin-bottom: 0.7em;
 }
 
 h1 {
     margin: 0;
     font-size: 6em;
     color: var(--dark-grey);
-    /* border: 1px solid black; */
-    /* margin-bottom:0; */
 }
 
 h2 {
@@ -74,7 +74,30 @@ h2 {
 }
 
 #subtitle-span {
-    color: var(--blue-grey);
+    color: var(--highlight);
+}
+
+#scroll-down {
+    font-size: 2em;
+    padding-top: 1em;
+    color: var(--light-grey);
+    animation: pulsate 2s infinite;
+    cursor: default;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.8);
+        /* opacity: 0; */
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
 }
 
 /*****************
@@ -121,9 +144,16 @@ h2 {
 }
 
 .sticky {
+    width: 100%;
+    padding: 0 1.8em;
+    box-sizing: border-box;
+    display: flex;
+    height: 90px;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
+    back-ground-color: transparent;
 }
 
 /*****************
@@ -144,14 +174,14 @@ h2 {
     padding-bottom: 1.25em;
     text-align: center;
     font-size: 2.5em;
-    color: var(--pale-grey);
+    color: var(--white-grey);
 }
 
 h3 {
     margin-top: 0.10em;
     margin-bottom: 0.2em;
     font-size: 1em;
-    color: #FF9F55;
+    color: var(--highlight);
 }
 
 h4 {
@@ -166,7 +196,27 @@ h4 {
     margin-left: 0.7em;
 }
 
-/***** MOBILE *****/
+/*****************
+     FOOTER
+*****************/
+
+.footer-div {
+    background-color: var(--footer);
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding-top:6em;
+    padding-bottom:4em;
+}
+
+.footer-div .contact-link {
+    padding: 0 2em;
+}
+
+/*****************
+     MOBILE
+*****************/
 @media screen and (max-width: 700px) {
     .title-container {
         /* margin-top: 24em; */

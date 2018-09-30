@@ -14,9 +14,9 @@ function freezeNavBar() {
     // Once window has scrolled as far as the navbar's original Y coordinate
     if (window.pageYOffset >= stickyNavBarYPosition) {
         // Add the sticky class to the navbar when you reach its scroll position.
-        navbar.classList.add("sticky")
+        navbar.classList.replace("nav-container", "sticky")
     } else {
         // Remove "sticky" when you leave the scroll position
-        navbar.classList.remove("sticky");
+        navbar.classList.replace("sticky", "nav-container");
     }
 }
