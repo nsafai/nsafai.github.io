@@ -2,6 +2,7 @@
      VARIABLES
 *****************/
 :root {
+    --white: #fff;
     --white-grey: #f5f6fa;
     --light-grey: #8395a7;
     --medium-grey: #576574;
@@ -27,6 +28,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--white);
 }
 
 /*****************
@@ -134,7 +136,7 @@ h2 {
     padding: 10px;
 }
 
-.social-logo {
+.social-anchor-tag, .social-logo {
     height: 30px;
 }
 
@@ -148,6 +150,8 @@ h2 {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:2;
+    background-color: var(--medium-grey);
 }
 
 /*****************
@@ -209,7 +213,7 @@ h4 {
 }
 
 /*****************
-     MOBILE
+  TABLET+MOBILE
 *****************/
 @media (max-width: 991px) {
     .hero-container {
@@ -220,7 +224,7 @@ h4 {
 @media screen and (max-width: 700px) {
 
     /*****************
-           HERO
+        MOBILE HERO
     *****************/
     body {
         font-size: 18px;
@@ -240,25 +244,26 @@ h4 {
     }
 
     /*****************
-          NAVBAR
+      MOBILE NAVBAR
     *****************/
-
     .nav-container {
+        height: 70px;
+    }
+    .sticky {
         height:70px;
     }
-
     .website-logo {
-        height: 37px;
-        width: 37px;
+        height: 32px;
+        width: 32px;
         /* font-size: 1.2em; */
     }
 
-    .social-logo {
+    .social-anchor-tag, .social-logo {
         height: 20px;
     }
 
     /*****************
-         TIMELINE
+      MOBILE TIMELINE
     *****************/
 
     #timeline-title {
