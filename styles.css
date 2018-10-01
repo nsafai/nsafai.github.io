@@ -100,13 +100,22 @@ h2 {
 /*****************
       NAVBAR
 *****************/
-.nav-container {
+
+.nav-container, .sticky {
     width: 100%;
     padding: 0 1.8em;
     box-sizing: border-box;
     display: flex;
     height: 90px;
     align-items: center;
+    background-color: var(--medium-grey);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:2;
     background-color: var(--medium-grey);
 }
 
@@ -136,22 +145,8 @@ h2 {
     padding: 10px;
 }
 
-.social-anchor-tag, .social-logo {
+.social-logo {
     height: 30px;
-}
-
-.sticky {
-    width: 100%;
-    padding: 0 1.8em;
-    box-sizing: border-box;
-    display: flex;
-    height: 90px;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:2;
-    background-color: var(--medium-grey);
 }
 
 /*****************
@@ -246,10 +241,8 @@ h4 {
     /*****************
       MOBILE NAVBAR
     *****************/
-    .nav-container {
-        height: 70px;
-    }
-    .sticky {
+
+    .nav-container, .sticky {
         height:70px;
     }
     .website-logo {
@@ -258,7 +251,7 @@ h4 {
         /* font-size: 1.2em; */
     }
 
-    .social-anchor-tag, .social-logo {
+    .social-logo {
         height: 20px;
     }
 
