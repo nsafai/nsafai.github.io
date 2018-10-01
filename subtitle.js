@@ -1,15 +1,16 @@
-var interval = setInterval(myTimer, 2000);
+var interval = setInterval(myTimer, 1500);
 const arrayOfSubtitles = [
-    "creative problem solving",
-    "Web Development",
-    "building things",
-    "Science Fiction",
-    "getting things done",
+    "web development",
     "LED programming",
-    "Soccer",
+    "home automation",
+    "product management",
+    "science fiction",
+    "getting things done",
+    "soccer",
 ];
 
 let i = 0;
+
 function myTimer() {
     // var d = new Date();
     if (i < arrayOfSubtitles.length) {

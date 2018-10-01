@@ -3,7 +3,6 @@
 *****************/
 :root {
     --white-grey: #f5f6fa;
-    --pale-grey: #c8d6e5;
     --light-grey: #8395a7;
     --medium-grey: #576574;
     --dark-grey: #252A2E;
@@ -41,9 +40,7 @@ html, body, .hero-container {
 .hero-container {
     display: grid;
     grid-template-rows: 1fr;
-    background: linear-gradient(to bottom right, #fff,  transparent), url("img/diamonds-bg.png") no-repeat center center;
-    /* opacity:40%; */
-    /* background: url("img/diamonds-bg.png") no-repeat center center; */
+    background: linear-gradient(to top, #fff,  transparent), url("img/diamonds-bg.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,7 +48,6 @@ html, body, .hero-container {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-image: linear-gradient(to bottom right, red, yellow); */
 }
 
 .title-container {
@@ -71,7 +67,6 @@ h1 {
 
 h2 {
     font-size: 1.8em;
-    /* border: 1px solid black; */
     margin-top: 0.3em;
     color: var(--medium-grey);
 }
@@ -91,7 +86,6 @@ h2 {
 @keyframes pulsate {
     0% {
         transform: scale(0.8);
-        /* opacity: 0; */
     }
 
     50% {
@@ -222,7 +216,6 @@ h4 {
 *****************/
 @media screen and (max-width: 700px) {
     .title-container {
-        /* margin-top: 24em; */
         margin-left: 1.5em;
         ;
         margin-right: 0.3em;
