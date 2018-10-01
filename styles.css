@@ -41,7 +41,9 @@ html, body, .hero-container {
 .hero-container {
     display: grid;
     grid-template-rows: 1fr;
-    background: url("img/subtle-background.jpg") no-repeat center center;
+    background: linear-gradient(to bottom right, #fff,  transparent), url("img/diamonds-bg.png") no-repeat center center;
+    /* opacity:40%; */
+    /* background: url("img/diamonds-bg.png") no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,6 +51,7 @@ html, body, .hero-container {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
 }
 
 .title-container {
