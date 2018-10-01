@@ -46,8 +46,6 @@ html, body, .hero-container {
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .title-container {
@@ -214,6 +212,12 @@ h4 {
 /*****************
      MOBILE
 *****************/
+@media (max-width: 991px) {
+    .hero-container {
+        background-attachment: scroll;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     /*****************
@@ -222,6 +226,7 @@ h4 {
     body {
         font-size: 18px;
     }
+
     .title-container {
         margin-left: 1.5em;
         margin-right: 0.3em;
