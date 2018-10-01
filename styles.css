@@ -11,8 +11,8 @@
 }
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('fonts/Quicksand-Regular.ttf');
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
 
 /*****************
@@ -40,7 +40,7 @@ html, body, .hero-container {
 .hero-container {
     display: grid;
     grid-template-rows: 1fr;
-    background: linear-gradient(to top, #fff,  transparent), url("img/diamonds-bg.png") no-repeat center center;
+    background: linear-gradient(to bottom right, #fff,  transparent), url("img/diamonds-bg.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -55,7 +55,7 @@ html, body, .hero-container {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-left: 7em;
+    margin-left: 15%;
     margin-right: 0.7em;
 }
 
@@ -215,6 +215,13 @@ h4 {
      MOBILE
 *****************/
 @media screen and (max-width: 700px) {
+
+    /*****************
+           HERO
+    *****************/
+    body {
+        font-size: 18px;
+    }
     .title-container {
         margin-left: 1.5em;
         ;
@@ -222,10 +229,52 @@ h4 {
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+
+    /*****************
+          NAVBAR
+    *****************/
+
+    .nav-container {
+        height:70px;
+    }
+
+    .website-logo {
+        height: 37px;
+        width: 37px;
+        /* font-size: 1.2em; */
+    }
+
+    .social-logo {
+        height: 20px;
+    }
+
+    /*****************
+         TIMELINE
+    *****************/
+
+    #timeline-title {
+        padding-top: 1.5em;
+        padding-bottom: 0.6em;
+        /* font-size: 2em; */
+    }
+
+    h3 {
+        margin-top: 0.10em;
+        margin-bottom: 0.2em;
+        /* font-size: 1em; */
+        color: var(--highlight);
+    }
+
+    h4 {
+        margin-top: 0.10em;
+        margin-bottom: 0.4em;
+        /* font-size: 1.2em; */
+        color: var(--blue-grey) font-size: 1.5em;
     }
 }

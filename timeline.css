@@ -118,10 +118,21 @@
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
+  /* reduce size of markers */
+  .container::after {
+      width:15px;
+      height:15px;
+      top:20px;
+  }
+  /* reduce size of line */
+  .timeline::after {
+    width: 4px;
+    margin-left: -2px;
+  }
 
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 20px;
   }
 
   /* Make all right containers behave like the left ones */
