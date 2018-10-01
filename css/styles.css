@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 /*****************
@@ -33,7 +33,6 @@ a {
 
 a img:hover, a p:hover {
     transform: rotate(20deg);
-    /* color: var(--highlight); */
 }
 
 /*****************
@@ -47,7 +46,7 @@ html, body, .hero-container {
 .hero-container {
     display: grid;
     grid-template-rows: 1fr;
-    background: linear-gradient(to bottom right, #fff,  transparent), url("img/diamonds-bg.png") no-repeat center center;
+    background: linear-gradient(to bottom right, #fff, transparent), url("../img/diamonds-bg.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -105,7 +104,6 @@ h2 {
 /*****************
       NAVBAR
 *****************/
-
 .nav-container, .sticky {
     width: 100%;
     padding: 0 1.8em;
@@ -120,7 +118,7 @@ h2 {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:2;
+    z-index: 2;
     background-color: var(--medium-grey);
     border-bottom: solid 1px var(--white-grey);
 }
@@ -198,19 +196,19 @@ h4 {
 /*****************
      FOOTER
 *****************/
-
 footer {
     background-color: var(--footer);
     border-top: solid 1px var(--white-grey);
-    padding-top:3em;
-    padding-bottom:4em;
+    padding-top: 3em;
+    padding-bottom: 4em;
 }
+
 .footer-div {
-    padding-top:1em;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-div .contact-link {
@@ -218,7 +216,7 @@ footer {
 }
 
 #footer-title {
-    text-align:center;
+    text-align: center;
     display: block;
     color: var(--light-grey);
 }
@@ -257,10 +255,10 @@ footer {
     /*****************
       MOBILE NAVBAR
     *****************/
-
     .nav-container, .sticky {
-        height:70px;
+        height: 70px;
     }
+
     .website-logo {
         height: 32px;
         width: 32px;
@@ -274,7 +272,6 @@ footer {
     /*****************
       MOBILE TIMELINE
     *****************/
-
     #timeline-title {
         padding-top: 1.5em;
         padding-bottom: 0.6em;
