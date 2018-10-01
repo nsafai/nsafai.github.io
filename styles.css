@@ -31,6 +31,11 @@ a {
     color: var(--white);
 }
 
+a img:hover, a p:hover {
+    transform: rotate(20deg);
+    /* color: var(--highlight); */
+}
+
 /*****************
        HERO
 *****************/
@@ -117,6 +122,7 @@ h2 {
     width: 100%;
     z-index:2;
     background-color: var(--medium-grey);
+    border-bottom: solid 1px var(--white-grey);
 }
 
 .left-nav {
@@ -193,18 +199,28 @@ h4 {
      FOOTER
 *****************/
 
-.footer-div {
+footer {
     background-color: var(--footer);
+    border-top: solid 1px var(--white-grey);
+    padding-top:3em;
+    padding-bottom:4em;
+}
+.footer-div {
+    padding-top:1em;
     display:flex;
     flex-direction:row;
     justify-content:center;
     align-items:center;
-    padding-top:6em;
-    padding-bottom:4em;
 }
 
 .footer-div .contact-link {
-    padding: 0 2em;
+    padding: 0 1.5em;
+}
+
+#footer-title {
+    text-align:center;
+    display: block;
+    color: var(--light-grey);
 }
 
 /*****************
