@@ -241,7 +241,7 @@ footer {
     }
 
     .hero-container {
-        background: #fff url("../img/diamonds-bg.png") no-repeat center center;
+        background: #fff url("../img/diamonds-bg.png") no-repeat left top;
         /* background: #ffffff url("img_tree.png") no-repeat right top; */
     }
 
