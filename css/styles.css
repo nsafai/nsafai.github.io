@@ -240,6 +240,11 @@ footer {
         font-size: 18px;
     }
 
+    .hero-container {
+        background: #fff url("../img/diamonds-bg.png") no-repeat center center;
+        /* background: #ffffff url("img_tree.png") no-repeat right top; */
+    }
+
     .title-container {
         margin-left: 1.5em;
         margin-right: 0.3em;
