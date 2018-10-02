@@ -113,6 +113,8 @@ h2 {
     height: 90px;
     align-items: center;
     background-color: var(--medium-grey);
+    border-bottom: solid 1px var(--white-grey);
+    margin-bottom:-1px; /* to hide border before scrolling down past the fold*/
 }
 
 .sticky {
@@ -120,8 +122,6 @@ h2 {
     top: 0;
     width: 100%;
     z-index: 2;
-    background-color: var(--medium-grey);
-    border-bottom: solid 1px var(--white-grey);
 }
 
 .left-nav {
