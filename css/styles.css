@@ -227,7 +227,7 @@ footer {
 *****************/
 @media (max-width: 991px) {
     .hero-container {
-        background-attachment: scroll;
+        /* background-attachment: scroll; */
     }
 }
 
