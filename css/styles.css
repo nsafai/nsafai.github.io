@@ -148,10 +148,12 @@ h2 {
 
 .contact-link {
     padding: 10px;
+    height:50px;
 }
 
 .social-logo {
     height: 30px;
+    margin-bottom:-8px; /* not entirely sure why this is necessary*/
 }
 
 /*****************
@@ -274,6 +276,7 @@ footer {
 
     .social-logo {
         height: 20px;
+        /* bottom:0; */
     }
 
     /*****************
