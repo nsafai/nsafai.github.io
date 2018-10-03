@@ -9,6 +9,8 @@
     --dark-grey: #252A2E;
     --highlight: #fa8231;
     --footer: #222f3e;
+    --navbar-size-desktop: 90px;
+    --navbar-size-mobile: 70px;
 }
 
 @font-face {
@@ -80,43 +82,48 @@ h2 {
 }
 
 #scroll-down {
-    font-size: 2em;
-    padding-top: 1em;
+    font-size: 1.5em;
+    /* padding-top: 1em; */
+    padding-left:0.75em;
     color: var(--light-grey);
     animation: pulsate 2s infinite;
     cursor: default;
+    position:absolute;
+    bottom: calc(var(--navbar-size-desktop) + 10px);
+    /* bottom: 100px; */
 }
 
 @keyframes pulsate {
     0% {
-        transform: scale(0.8);
+        transform: translateY(0);
     }
 
     50% {
-        transform: scale(1);
+        transform: translateY(-10px);
     }
 
     100% {
-        transform: scale(0.8);
+        transform: translateY(0);
+        /* transform: scale(0.8); */
     }
 }
 
 /*****************
       NAVBAR
 *****************/
-.nav-container, .sticky {
+.fixed-nav-container, .sticky-nav-container {
     width: 100%;
     padding: 0 1.8em;
     box-sizing: border-box;
     display: flex;
-    height: 90px;
+    height: var(--navbar-size-desktop);
     align-items: center;
     background-color: var(--medium-grey);
     border-bottom: solid 1px var(--white-grey);
     margin-bottom:-1px; /* to hide border before scrolling down past the fold*/
 }
 
-.sticky {
+.sticky-nav-container {
     position: fixed;
     top: 0;
     width: 100%;
@@ -231,7 +238,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
     /*****************
         MOBILE HERO
@@ -260,8 +267,8 @@ footer {
     /*****************
       MOBILE NAVBAR
     *****************/
-    .nav-container, .sticky {
-        height: 70px;
+    .fixed-nav-container, .sticky-nav-container {
+        height: var(--navbar-size-mobile);
     }
 
     .website-logo {

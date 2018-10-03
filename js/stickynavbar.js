@@ -10,7 +10,7 @@ var navbar = document.getElementById("navbar");
 var stickyNavBarYPosition = navbar.offsetTop;
 
 window.onresize = function () {
-    if (navbar.classList.contains("nav-container")) {
+    if (navbar.classList.contains("fixed-nav-container")) {
         stickyNavBarYPosition = navbar.offsetTop;
         console.log("stickyNavBarYPosition has changed to ", stickyNavBarYPosition);
     }
@@ -22,10 +22,10 @@ function freezeNavBar() {
     console.log("stickyNavBarYPosition is ", stickyNavBarYPosition);
     // Once window has scrolled as far as the navbar's original Y coordinate
     if (window.pageYOffset >= stickyNavBarYPosition) {
-        // Add the sticky class to the navbar when you reach its scroll position.
-        navbar.classList.replace("nav-container", "sticky")
+        // Add the sticky-nav-container class to the navbar when you reach its scroll position.
+        navbar.classList.replace("fixed-nav-container", "sticky-nav-container")
     } else {
-        // Remove "sticky" when you leave the scroll position
-        navbar.classList.replace("sticky", "nav-container");
+        // Remove "sticky-nav-container" when you leave the scroll position
+        navbar.classList.replace("sticky-nav-container", "fixed-nav-container");
     }
 }
