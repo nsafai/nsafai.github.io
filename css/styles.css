@@ -47,7 +47,6 @@ html, body, .hero-container {
     display: grid;
     grid-template-rows: 1fr;
     background: linear-gradient(to top right, #fff, transparent), url("../img/diamonds-bg.png") no-repeat center center;
-    /* opacity:0.4; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -187,7 +186,6 @@ h3 {
 h4 {
     margin-top: 0.10em;
     margin-bottom: 0.4em;
-    ;
     font-size: 1.5em;
     color: var(--blue-grey) font-size: 1.5em;
 }
@@ -243,9 +241,7 @@ footer {
     }
 
     .hero-container {
-        /* background: linear-gradient(to bottom right, #fff, var(--white-grey)); */
         /* background: #fff url("../img/diamonds-bg.png") no-repeat left top; */
-        /* background: #ffffff url("img_tree.png") no-repeat right top; */
     }
 
     .title-container {
@@ -271,12 +267,10 @@ footer {
     .website-logo {
         height: 32px;
         width: 32px;
-        /* font-size: 1.2em; */
     }
 
     .social-logo {
         height: 20px;
-        /* bottom:0; */
     }
 
     /*****************
@@ -285,20 +279,17 @@ footer {
     #timeline-title {
         padding-top: 1.5em;
         padding-bottom: 0.6em;
-        /* font-size: 2em; */
     }
 
     h3 {
         margin-top: 0.10em;
         margin-bottom: 0.2em;
-        /* font-size: 1em; */
         color: var(--highlight);
     }
 
     h4 {
         margin-top: 0.10em;
         margin-bottom: 0.4em;
-        /* font-size: 1.2em; */
         color: var(--blue-grey) font-size: 1.5em;
     }
 }
