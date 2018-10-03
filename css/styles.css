@@ -233,6 +233,10 @@ footer {
   TABLET+MOBILE
 *****************/
 @media (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+
     .hero-container {
         background-attachment: scroll;
     }
@@ -243,9 +247,6 @@ footer {
     /*****************
         MOBILE HERO
     *****************/
-    body {
-        font-size: 18px;
-    }
 
     .hero-container {
         /* background: #fff url("../img/diamonds-bg.png") no-repeat left top; */
