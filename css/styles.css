@@ -30,11 +30,11 @@ a {
 }
 
 a:hover {
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
 }
 
 a img:hover {
-    transform: rotate(20deg);
+    transform: rotate(10deg);
 }
 
 /*****************
