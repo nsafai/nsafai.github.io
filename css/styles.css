@@ -48,7 +48,7 @@ html, body, .hero-container {
 .hero-container {
     display: grid;
     grid-template-rows: 1fr;
-    background: linear-gradient(to top right, #fff, transparent), url("../img/diamonds-bg.png") no-repeat center center;
+    background: url("../img/subtle-background.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
