@@ -29,7 +29,11 @@ a {
     color: var(--white);
 }
 
-a img:hover, a p:hover {
+a:hover {
+    transform: rotate(-20deg);
+}
+
+a img:hover {
     transform: rotate(20deg);
 }
 
