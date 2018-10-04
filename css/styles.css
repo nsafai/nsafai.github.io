@@ -13,11 +13,6 @@
     --navbar-size-mobile: 70px;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('../fonts/Poppins/Poppins-Regular.ttf');
-}
-
 /*****************
     ENTIRE PAGE
 *****************/
@@ -69,6 +64,7 @@ h1 {
     margin: 0;
     font-size: 6em;
     color: var(--dark-grey);
+    font-weight:700;
 }
 
 h2 {
