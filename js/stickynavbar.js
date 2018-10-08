@@ -9,8 +9,11 @@ var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 var stickyNavBarYPosition = navbar.offsetTop;
 
+// to correct stickynavbarYposition on window resize
 window.onresize = function () {
+    // check if navbar is already sticky or still fixed at bottom of screen
     if (navbar.classList.contains("fixed-nav-container")) {
+        // grab new Y coordinate
         stickyNavBarYPosition = navbar.offsetTop;
         console.log("stickyNavBarYPosition has changed to ", stickyNavBarYPosition);
     }
