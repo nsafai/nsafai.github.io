@@ -48,7 +48,7 @@ html, body, .hero-container {
 .hero-container {
   display: grid;
   grid-template-rows: 1fr;
-  background: url("../img/subtle-background.jpg") no-repeat center center;
+  background: url("../img/background/subtle-background.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -248,15 +248,14 @@ footer {
   }
 }
 
+/*****************
+       MOBILE
+*****************/
 @media screen and (max-width: 600px) {
 
   /*****************
         MOBILE HERO
-    *****************/
-  .hero-container {
-    /* background: #fff url("../img/diamonds-bg.png") no-repeat left top; */
-  }
-
+  *****************/
   .title-container {
     margin-left: 1.5em;
     margin-right: 0.3em;
@@ -272,7 +271,7 @@ footer {
 
   /*****************
       MOBILE NAVBAR
-    *****************/
+  *****************/
   .fixed-nav-container, .sticky-nav-container {
     height: var(--navbar-size-mobile);
   }
@@ -288,7 +287,7 @@ footer {
 
   /*****************
       MOBILE TIMELINE
-    *****************/
+  *****************/
   #timeline-title {
     padding-top: 1.5em;
     padding-bottom: 0.6em;
