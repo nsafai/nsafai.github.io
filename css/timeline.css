@@ -91,7 +91,7 @@
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
+  padding: 1.5em 2em;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -101,15 +101,15 @@
 @media screen and (max-width: 600px) {
 
   /* Place the timelime to the left */
-  #timeline::after {
+  #timeline-experiences::after {
     left: 31px;
   }
 
   /* Full-width containers */
   .container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+    padding-left: 60px;
+    padding-right: 16px;
     margin-top: 20px;
   }
 
@@ -130,7 +130,7 @@
   }
 
   /* reduce size of line */
-  #timeline::after {
+  #timeline-experiences::after {
     width: 4px;
     margin-left: -2px;
   }

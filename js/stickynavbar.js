@@ -16,8 +16,6 @@ window.onresize = function resizingWindow() {
 };
 
 function freezeNavBar() {
-  console.log('pageYOffset is ', window.pageYOffset);
-  console.log('stickyNavBarYPosition is ', stickyNavBarYPosition);
   // Once window has scrolled as far as the navbar's original Y coordinate
   if (window.pageYOffset >= stickyNavBarYPosition) {
     // Add the sticky-nav-container class to the navbar when you reach its scroll position.
