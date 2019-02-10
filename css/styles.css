@@ -163,7 +163,7 @@ h2 {
 .social-logo {
   height: 30px;
   margin-bottom: -8px;
-  /* to center them vertically */
+  fill:white;
 }
 
 /*****************
@@ -199,7 +199,8 @@ h4 {
   margin-top: 0.10em;
   margin-bottom: 0.4em;
   font-size: 1.5em;
-  color: var(--blue-grey) font-size: 1.5em;
+  color: var(--blue-grey);
+  font-size: 1.5em;
   font-weight: 600;
 }
 
@@ -302,6 +303,7 @@ footer {
   h4 {
     margin-top: 0.10em;
     margin-bottom: 0.4em;
-    color: var(--blue-grey) font-size: 1.5em;
+    color: var(--blue-grey);
+    font-size: 1.5em;
   }
 }
