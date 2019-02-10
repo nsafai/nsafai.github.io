@@ -208,7 +208,7 @@ html, body, .hero-container {
   padding: 5vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1em;
+  grid-column-gap: 1.5em;
   grid-row-gap: 3em;
 }
 
@@ -335,6 +335,21 @@ footer {
 }
 
 /*****************
+   SMALL DESKTOP
+*****************/
+@media screen and (max-width: 1300px) {
+  body {
+    font-size:17px;
+  }
+
+  #projects {
+    padding: 3vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2em;
+  }
+}
+
+/*****************
   TABLET+MOBILE
 *****************/
 @media screen and (max-width: 991px) {
@@ -347,7 +362,8 @@ footer {
   }
 
   #projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1em;
+    padding: 3vw;
   }
 
   .project-txt {
@@ -418,5 +434,6 @@ footer {
 
   #projects {
     grid-template-columns: 1fr;
+    padding:5vw;
   }
 }
