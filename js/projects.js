@@ -60,15 +60,6 @@ const projects = [
     liveUrl: 'http://nicolaisafai.com/ticketbashwebsite',
     gitUrl: 'https://github.com/nsafai/ticketbash-ios',
   },
-  {
-    imgUrl: 'https://cdn.filestackcontent.com/kqMoaEEQQXOL7dYMyAXQ',
-    title: 'Make School Online Academy',
-    description: `I designed the initial wireframes for Make School's 
-    curriculum delivery platform.`,
-    tech: `Sketch`,
-    liveUrl: 'http://makeschool.com/academy',
-    gitUrl: 'https://github.com/nsafai/ticketbash-ios',
-  },
 ]
 
 projects.forEach((project) => {
