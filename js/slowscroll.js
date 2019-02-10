@@ -7,8 +7,12 @@ $('#scroll-down').click(() => {
   }, 'slow');
 });
 
-// scroll to top when clicking brand in navbar
-$('#brand-logo').click(() => {
+function scrollToTop() {
   $('html, body').animate({ scrollTop: 0 }, 'slow');
   return false;
+}
+
+// scroll to top when clicking brand in navbar
+$('#brand-logo').click(() => {
+  scrollToTop();
 });
