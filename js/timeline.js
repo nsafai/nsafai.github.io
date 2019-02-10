@@ -1,7 +1,7 @@
 /* eslint-disable semi */
 /* eslint-disable no-undef */
 
-const timelineDiv = document.getElementById('timeline')
+const timelineDiv = document.getElementById('timeline-experiences')
 
 const experiences = [
   {

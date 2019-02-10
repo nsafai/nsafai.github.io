@@ -3,7 +3,8 @@
 *****************/
 :root {
   --white: #fff;
-  --white-grey: #f5f6fa;
+  --white-grey: #e5e6ea;
+  --lighter-grey: #d3d7da;
   --light-grey: #8395a7;
   --medium-grey: #576574;
   --dark-grey: #252A2E;
@@ -178,13 +179,26 @@ h2 {
   color: #fff;
 }
 
-#timeline-title {
+/* ABOUT */
+.about {
+  margin:auto;
+  padding: 1em;
+  max-width: 800px;
+  color: var(--white-grey);
+}
+
+.about .timeline-title {
+  margin-bottom: 0;
+}
+
+/* EXPERIENCE */
+.timeline-title {
   margin-top: 0;
   padding-top: 2.5em;
   padding-bottom: 1.25em;
   text-align: center;
   font-size: 2.5em;
-  color: var(--white-grey);
+  color: var(--white);
 }
 
 h3 {
