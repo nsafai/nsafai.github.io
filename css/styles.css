@@ -223,13 +223,13 @@ html, body, .hero-container {
 .project {
   background-color: var(--white);
   border-radius: 3px;
-  box-shadow: 0px 2px 3px -2px rgba(0, 0, 0, 1);
+  box-shadow: 2px 4px 10px -2px rgba(0, 0, 0, 0.5);
   display: grid;
-  grid-template-rows: 25vh 1fr 1.9em;
+  grid-template-rows: 23vh 1fr 2.9em;
 }
 
 .project-img-container {
-  max-height: 40vh;
+  max-height: 23vh;
   overflow: hidden;
 }
 
@@ -238,7 +238,7 @@ html, body, .hero-container {
   width: 100%;
   height: auto;
   border-radius: 3px 3px 0 0;
-  box-shadow: 0px 1px 2px -2px rgba(0, 0, 0, 1);
+  box-shadow: 2px 4px 10px -2px rgba(0, 0, 0, 0.5);
 }
 
 .project-title {
@@ -246,7 +246,7 @@ html, body, .hero-container {
 }
 
 .project-txt {
-  padding: 1em 2em 1.5em 2em;
+  padding: 1.5em 2em 1.5em 2em;
 }
 
 .project-tech {
@@ -383,7 +383,7 @@ footer {
   }
 
   .project-txt {
-    padding: 0.5em 1em 1em 1em;
+    padding: 1em;
   }
 }
 
