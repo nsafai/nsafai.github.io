@@ -74,10 +74,10 @@ projects.forEach((project) => {
     <p class="project-desc">${project.description}</p>
   </div> 
   <div class="project-buttons">
-    <a href='${project.liveUrl}'>
+    <a href='${project.liveUrl}' target='_blank'>
       <button class="project-link">Try it</button>
     </a>
-    <a href='${project.gitUrl}'>
+    <a href='${project.gitUrl}' target='_blank'>
       <button class="project-github">See code</button>
     </a>
   </div>

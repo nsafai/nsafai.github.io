@@ -6,9 +6,11 @@ const arrayOfSubtitles = [
   'science fiction',
   'getting things done',
   'indoor soccer',
-  'beautiful design',
+  'design',
   'psychology',
   'crisp sound',
+  'learning new things',
+  'gaming',
 ];
 
 let i = 0;
