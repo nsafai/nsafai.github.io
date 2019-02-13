@@ -33,7 +33,7 @@ const projects = [
     gitUrl: 'https://github.com/nsafai/shortlink-api',
   },
   {
-    imgUrl: 'https://cdn.filestackcontent.com/nJ89AiiRlqmioOjHTbKA',
+    imgUrl: 'https://cdn.filestackcontent.com/3sgPVwyzSLGSxT6UkV0D',
     title: 'Keto Recipes',
     description: `A Keto recipe finder website that lets users save 
     their favorite recipes and turn them into grocery lists`,
