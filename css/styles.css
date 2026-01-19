@@ -86,12 +86,7 @@ html, body, .hero-container {
 .hero-container {
   display: grid;
   grid-template-rows: 1fr;
-  background: url("../img/background/subtle-background.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
+  background: linear-gradient(135deg, var(--white-grey) 0%, var(--lighter-grey) 100%);
 }
 
 .title-container {
@@ -213,12 +208,6 @@ footer {
   body {
     font-size: 16px;
   }
-
-  .hero-container {
-    background-attachment: scroll;
-  }
-
-
 }
 
 /*****************
